@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>PHP Básico</title>
 </head>
 <body>
@@ -75,7 +76,25 @@
             echo "El producto de: X * Y * N * M = " . $X * $Y * $N * $M . "<br>";
         ?>
         
-        <h2><a href="calculadora.php" target="_blank">Función Calculadora</a></h2>
+        <h2>Calculadora</h2>
+        <form action="calculadora.php" method="get">
+        <fieldset>
+            <legend>Escriba el primer número <br> escoja la operación <br> escriba el segundo número</legend>
+            <label for="num1">Número 1</label>
+            <input type="number" name="num1" required>
+            <label for="ope">Operación</label>
+            <select name="ope" id="">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>                
+            </select>
+            <label for="num2">Número 2</label>
+            <input type="number" name="num2" min="1" required>
+            <input type="submit" value="Resultado">
+        </fieldset>
+    </form>
+        <!-- <h2><a href="contador.php" target="_blank">Programa Contador Exercicio 4</a></h2> -->
 
     </main>
     

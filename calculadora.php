@@ -7,49 +7,36 @@
     <title>Calculadora</title>
 </head>
 <body>
-    <h1>Calculadora</h1>
-    <div class="container">
-    <form action="#" method="get">
-        <fieldset>
-            <legend>Escriba el primer número <br> escoja la operación <br> escriba el segundo número</legend>
-            <label for="num1">Número 1</label>
-            <input type="number" name="num1" required><br>
-            <select name="ope" id="">
-                <option value="+">+</option>
-                <option value="-">-</option>
-                <option value="*">*</option>
-                <option value="/">/</option>                
-            </select><br>
-            <label for="num2">Número 2</label>
-            <input type="number" name="num2" min="1" required>
-            <input type="submit" value="Igual">
-        </fieldset>
-    </form>
     <div class="resultado">
-    <?php
-        $num1 = $_GET['num1'];
-        $num2 = $_GET['num2'];
-        $ope = $_GET['ope'];
+        <?php
+            $num1 = $_GET['num1'];
+            $num2 = $_GET['num2'];
+            $ope = $_GET['ope'];
 
-        function calculadora($num1, $num2, $ope){
-            $resultado = 0;
-            if($ope == "+"){
-                $resultado = $num1 + $num2;
-            } else if($ope == "-"){
-                $resultado = $num1 - $num2;
-            } else if($ope == "*"){
-                $resultado = $num1 * $num2;
-            } else if($ope = "/"){
-                $resultado = $num1 / $num2;
-            } else{
-                $resultado = "Has cometido algún error";
+            function calculadora($num1, $num2, $ope){
+                $resultado = 0;
+                if($ope == "+"){
+                    $resultado = $num1 + $num2;
+                } else if($ope == "-"){
+                    $resultado = $num1 - $num2;
+                } else if($ope == "*"){
+                    $resultado = $num1 * $num2;
+                } else if($ope = "/"){
+                    $resultado = $num1 / $num2;
+                } else{
+                    $resultado = "Has cometido algún error";
+                }
+                return $resultado;
             }
-            return $resultado;
-        }
-        
-        $result = calculadora($num1, $num2, $ope);
-        echo "El resultado es: $result";
-    ?>
+            
+            $result = calculadora($num1, $num2, $ope);
+            echo "<p>";
+            echo "El resultado es: $result";
+            echo "</p>";
+        ?>
+    </div>
+    
+    <a href="index.php">Volver</a>
     </div>
     </div>
 
