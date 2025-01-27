@@ -78,26 +78,69 @@
         
         <h2>Calculadora</h2>
         <form action="calculadora.php" method="get">
-        <fieldset>
-            <legend>Escriba el primer número <br> escoja la operación <br> escriba el segundo número</legend>
-            <label for="num1">Número 1</label>
-            <input type="number" name="num1" required>
-            <label for="ope">Operación</label>
-            <select name="ope" id="">
-                <option value="+">+</option>
-                <option value="-">-</option>
-                <option value="*">*</option>
-                <option value="/">/</option>                
-            </select>
-            <label for="num2">Número 2</label>
-            <input type="number" name="num2" min="1" required>
-            <input type="submit" value="Resultado">
-        </fieldset>
-    </form>
-        <!-- <h2><a href="contador.php" target="_blank">Programa Contador Exercicio 4</a></h2> -->
+            <fieldset>
+                <legend>Escriba el primer número <br> escoja la operación <br> escriba el segundo número</legend>
+                <label for="num1">Número 1</label>
+                <input type="number" name="num1" required>
+                <label for="ope">Operación</label>
+                <select name="ope" id="">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>                
+                </select>
+                <label for="num2">Número 2</label>
+                <input type="number" name="num2" min="1" required>
+                <input type="submit" value="Resultado">
+            </fieldset>
+        </form>
+        
+        <h2>Contador</h2>
+        <form action="contador.php" method="get">
+            <fieldset>
+                <legend>Hasta que número quieres contar??</legend>
+                <label for="num1">Escriba hasta que número quiere contar</label>
+                <input type="number" name="num1" value="10" >
+                <label for="num2">De cuanto en cuanto quiere contar??</label>
+                <input type="number" name="num2" min="1" required>
+                <input type="submit" value="Resultado">
+            </fieldset>
+        </form>
+        <h2>Grado Según la nota</h2>
+        <form action="grado.php" method="get">
+            <fieldset>
+                <legend>Te decimos en que división estas</legend>
+                <label for="nota">Escribe tu nota en porcentaje</label>
+                <input type="number" name="nota" required min="1">
+                <input type="submit" value="Resultado">
+            </fieldset>
+        </form>
+        <h2>Charly te ha mordido el dedo????</h2>
+        <form action="isBitten.php">
+            <fieldset>
+                <button type="submit">Prueba</button>
+                <!-- <?php                    
+                    function isBitten(){
+                        $mordido = rand(0, 1);
+                        if($mordido == 1){
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    }
+                
+                    if(isBitten()){
+                        echo "Charly te ha mordido el dedo 😿";
+                    } else {
+                        echo "Charly no te ha mordido el dedo 😺";
+                    }
+                ?>
+                <input type="submit" value="Volver a intentar"> -->
+            </fieldset>
+        </form>
+
+
 
     </main>
-    
-    
 </body>
 </html>

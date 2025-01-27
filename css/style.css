@@ -1,5 +1,5 @@
 fieldset{
-    width: 20%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     label, input, select {
