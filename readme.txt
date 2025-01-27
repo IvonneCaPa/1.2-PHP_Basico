@@ -1,0 +1,1 @@
+Poner en práctica variables, condicionales, bucles, funciones, constantes y operaciones básicas en PHP
