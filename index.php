@@ -73,26 +73,12 @@
             echo "El doble de M es: " . $M * $M . "<br>";
             echo "La suma de: X + Y + N + M = " . $X + $Y + $N + $M . "<br>";
             echo "El producto de: X * Y * N * M = " . $X * $Y * $N * $M . "<br>";
-
-
-            function calculadora($num1, $num2){
-                echo "Num1 + Num2 = " . $num1  +  $num2;
-            }
-
-            calculadora(3, 4);
-
-
-
-
-
-
-
-
         ?>
+        
+        <h2><a href="calculadora.php" target="_blank">Función Calculadora</a></h2>
 
     </main>
     
-
     
 </body>
 </html>
