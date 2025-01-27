@@ -1,0 +1,66 @@
+body{
+    background: radial-gradient(circle, #0d47a1, #42a4f555);
+    color:#A8DADC;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.container{
+    width: 30%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+fieldset{
+    border: 3px solid #A8DADC;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    legend{
+        margin-bottom: 10px;
+    }
+}
+
+label{
+    width: 45%;
+    color: #A8DADC;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+input{
+    width:45%;
+    padding: 10px;
+}
+
+select{
+    width: 45%;
+    padding: 10px;
+    margin: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+input[type="submit"]{
+    background-color: #f72585;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.resultado{
+    border: 3px solid #A8DADC;
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+    color: white;
+    padding: 5px;
+}
