@@ -13,7 +13,9 @@
             $num2 = $_GET['num2'];
             $ope = $_GET['ope'];
 
-            function calculator($num1, $num2, $ope){
+            // function calculator($num1, $num2, $ope)
+            function calculate(int|float $num1, int|float $num2, string $ope): string|float
+            {
                 $resultado = 0;
                 if($ope == "+"){
                     $resultado = $num1 + $num2;
@@ -29,7 +31,7 @@
                 return $resultado;
             }
             
-            $result = calculator($num1, $num2, $ope);
+            $result = calculate($num1, $num2, $ope);
             echo "<p>";
             echo "El resultado es: $result";
             echo "</p>";

@@ -22,7 +22,8 @@
             echo "Esta es una variable de tipo String = " . $string . "<br>";
             echo "Esta es una variable de tipo booleana = " . $bool . "<br>";
 
-            const mi_nombre = "Ivonne Cantor Páez";
+            // const mi_nombre = "Ivonne Cantor Páez";
+            define('mi_nombre', "Ivonne Cantor Páez");
             
             // Imprimir mi nombre con variables
             echo "<h2> Mi variable constantes es ";
@@ -100,7 +101,7 @@
             <fieldset>
                 <legend>Hasta que número quieres contar??</legend>
                 <label for="num1">Escriba hasta que número quiere contar</label>
-                <input type="number" name="num1" value="10" >
+                <input type="number" name="num1" value="10">
                 <label for="num2">De cuanto en cuanto quiere contar??</label>
                 <input type="number" name="num2" min="1" required>
                 <input type="submit" value="Resultado">
