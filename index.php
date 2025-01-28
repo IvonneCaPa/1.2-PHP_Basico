@@ -77,7 +77,7 @@
         ?>
         
         <h2>Calculadora</h2>
-        <form action="calculadora.php" method="get">
+        <form action="calculator.php" method="get">
             <fieldset>
                 <legend>Escriba el primer número <br> escoja la operación <br> escriba el segundo número</legend>
                 <label for="num1">Número 1</label>

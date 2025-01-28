@@ -13,7 +13,7 @@
             $num2 = $_GET['num2'];
             $ope = $_GET['ope'];
 
-            function calculadora($num1, $num2, $ope){
+            function calculator($num1, $num2, $ope){
                 $resultado = 0;
                 if($ope == "+"){
                     $resultado = $num1 + $num2;
@@ -29,7 +29,7 @@
                 return $resultado;
             }
             
-            $result = calculadora($num1, $num2, $ope);
+            $result = calculator($num1, $num2, $ope);
             echo "<p>";
             echo "El resultado es: $result";
             echo "</p>";
